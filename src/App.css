@@ -1,0 +1,262 @@
+.app {
+  width: min(1180px, calc(100% - 32px));
+  margin: auto;
+  padding: 48px 0;
+}
+
+.app-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.app h1 {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: clamp(32px, 5vw, 56px);
+  line-height: 1;
+}
+
+.app-header p {
+  max-width: 580px;
+  margin: 0;
+  color: #52616f;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns:
+    repeat(5, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  background: white;
+  padding: 18px;
+  border: 1px solid #e4e9f0;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgb(15 23 42 / 5%);
+}
+
+.stat-card.urgent {
+  border-color: #fecaca;
+  background: #fff8f8;
+}
+
+.stats strong {
+  display: block;
+  font-size: 30px;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.stats span {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.deadline-form {
+  display: grid;
+  grid-template-columns:
+    minmax(180px, 1.2fr)
+    minmax(220px, 1.4fr)
+    minmax(160px, 0.8fr)
+    minmax(150px, 0.7fr)
+    auto;
+  align-items: end;
+  gap: 14px;
+  padding: 22px;
+  margin-bottom: 18px;
+  background: white;
+  border: 1px solid #e4e9f0;
+  border-radius: 8px;
+  box-shadow: 0 14px 35px rgb(15 23 42 / 7%);
+}
+
+.form-heading {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.form-heading h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.form-heading p {
+  margin: 6px 0 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.deadline-form label {
+  display: grid;
+  gap: 7px;
+}
+
+.deadline-form label span {
+  color: #334155;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.deadline-form input,
+.deadline-form select {
+  width: 100%;
+  min-height: 44px;
+  padding: 0 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background: white;
+  color: #111827;
+  font: inherit;
+}
+
+.deadline-form input:focus,
+.deadline-form select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgb(37 99 235 / 14%);
+  outline: none;
+}
+
+.deadline-form button {
+  min-height: 44px;
+  padding: 0 18px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.deadline-form button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.form-error {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 10px 12px;
+  border: 1px solid #fecaca;
+  border-radius: 6px;
+  background: #fef2f2;
+  color: #b91c1c;
+  font-size: 14px;
+}
+
+.filters {
+  width: fit-content;
+  display: flex;
+  gap: 4px;
+  margin-bottom: 18px;
+  padding: 4px;
+  border: 1px solid #e4e9f0;
+  border-radius: 8px;
+  background: white;
+}
+
+.filters button {
+  min-height: 38px;
+  padding: 0 14px;
+  border: none;
+  background: transparent;
+  border-radius: 6px;
+  color: #475569;
+  font-weight: 700;
+}
+
+.filters button.active {
+  background: #2563eb;
+  color: white;
+}
+
+.deadline-list {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.loading,
+.empty {
+  padding: 40px;
+  border: 1px dashed #cbd5e1;
+  border-radius: 8px;
+  background: white;
+  color: #64748b;
+  text-align: center;
+}
+
+@media (max-width: 1040px) {
+  .stats {
+    grid-template-columns:
+      repeat(3, 1fr);
+  }
+
+  .deadline-form {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .deadline-form button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .app {
+    width: min(100% - 24px, 680px);
+    padding: 28px 0;
+  }
+
+  .app-header {
+    display: block;
+  }
+
+  .app h1 {
+    font-size: 38px;
+  }
+
+  .stats {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .deadline-form {
+    grid-template-columns: 1fr;
+  }
+
+  .filters {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .filters button {
+    flex: 1 0 max-content;
+  }
+}
+
+@media (max-width: 520px) {
+  .stats {
+    grid-template-columns: 1fr;
+  }
+}

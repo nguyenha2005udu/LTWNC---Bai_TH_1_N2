@@ -1,0 +1,45 @@
+{
+  "assignments": [
+    {
+      "id": "1",
+      "subject": "Lập trình Web nâng cao",
+      "title": "Bài tập Redux Toolkit",
+      "deadline": "2026-09-25",
+      "priority": "high",
+      "completed": false
+    },
+    {
+      "id": "2",
+      "subject": "Cơ sở dữ liệu",
+      "title": "Thiết kế cơ sở dữ liệu",
+      "deadline": "2026-09-28",
+      "priority": "medium",
+      "completed": false
+    },
+    {
+      "id": "3",
+      "subject": "Tiếng Anh",
+      "title": "IELTS Writing Task 2",
+      "deadline": "2026-09-20",
+      "priority": "low",
+      "completed": false
+    },
+    {
+      "id": "4",
+      "subject": "Phát triển ứng dụng di động",
+      "title": "Hoàn thiện màn hình Login",
+      "deadline": "2026-09-23",
+      "priority": "high",
+      "completed": true
+    },
+    {
+      "id": "z91PiY1yb14",
+      "subject": "Toeic",
+      "title": "Toeic Part 5 Reading ",
+      "deadline": "2026-09-23",
+      "priority": "high",
+      "completed": false
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
