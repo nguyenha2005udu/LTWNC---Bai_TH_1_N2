@@ -84,7 +84,7 @@ export function DeadlineForm({
         <div>
           <h2>Thêm bài tập</h2>
           <p>
-            Nhập deadline mới để lưu vào mock API.
+            Ghi lại việc cần làm, bắt đầu từ đây.
           </p>
         </div>
       </div>
@@ -153,7 +153,7 @@ export function DeadlineForm({
       </button>
 
       {(formError || apiError) && (
-        <p className="form-error">
+        <p className="form-error" role="alert">
           {formError ?? apiError}
         </p>
       )}

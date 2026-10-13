@@ -73,6 +73,11 @@ const deadlineSlice = createSlice({
   initialState,
 
   reducers: {
+    replaceDeadlines: (state, action: PayloadAction<Deadline[]>) => {
+      state.items = action.payload
+      state.status = 'succeeded'
+      state.error = null
+    },
     toggleDeadline: (
       state,
       action: PayloadAction<string>
@@ -145,6 +150,7 @@ const deadlineSlice = createSlice({
 })
 
 export const {
+  replaceDeadlines,
   toggleDeadline,
   deleteDeadline,
 } = deadlineSlice.actions

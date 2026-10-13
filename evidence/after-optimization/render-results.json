@@ -1,0 +1,39 @@
+[
+  {
+    "mode": "optimized",
+    "mounted": 6,
+    "search": {
+      "renders": 4,
+      "commits": [
+        {
+          "phase": "update",
+          "duration": 1.800000000745058
+        },
+        {
+          "phase": "update",
+          "duration": 1
+        },
+        {
+          "phase": "update",
+          "duration": 0.30000000074505806
+        },
+        {
+          "phase": "update",
+          "duration": 0.40000000037252903
+        },
+        {
+          "phase": "update",
+          "duration": 0.40000000037252903
+        },
+        {
+          "phase": "update",
+          "duration": 2.600000001490116
+        }
+      ]
+    },
+    "theme": {
+      "renders": 0,
+      "commits": []
+    }
+  }
+]

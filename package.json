@@ -8,21 +8,43 @@
     "build": "tsc -b && vite build",
     "lint": "oxlint .",
     "preview": "vite preview",
-    "mock-api": "json-server db.json --port 3001"
+    "mock-api": "json-server db.json --port 3001",
+    "test": "jest --runInBand --coverage",
+    "bench:build": "vite build --config benchmarks/vite.config.ts",
+    "bench:preview": "vite preview --config benchmarks/vite.config.ts --host 127.0.0.1 --port 4173",
+    "bench:renders": "node benchmarks/measure.mjs",
+    "test:browser": "node benchmarks/smoke.mjs",
+    "evidence:console": "node benchmarks/capture-console.mjs"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.5.0",
     "json-server": "^1.0.0-beta.3",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
-    "react-redux": "^9.2.0"
+    "react-redux": "^9.2.0",
+    "react-window": "^1.8.11",
+    "redux-logger": "^3.0.6",
+    "zustand": "^5.0.15"
   },
   "devDependencies": {
+    "@testing-library/dom": "^10.4.2",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.7",
+    "@types/jest": "^30.0.0",
     "@types/node": "^24.13.3",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.7",
+    "@types/react-window": "^1.8.8",
+    "@types/redux-logger": "^3.0.13",
     "@vitejs/plugin-react": "^6.1.1",
+    "jest": "^30.5.2",
+    "jest-environment-jsdom": "^30.5.2",
+    "lighthouse": "^13.5.0",
     "oxlint": "^1.81.0",
+    "playwright": "^1.64.0",
+    "ts-jest": "^29.4.14",
+    "ts-node": "^10.9.2",
     "typescript": "~6.0.2",
     "vite": "^8.3.0"
   }

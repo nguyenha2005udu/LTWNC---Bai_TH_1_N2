@@ -1,0 +1,72 @@
+[
+  {
+    "mode": "baseline",
+    "mounted": 10000,
+    "search": {
+      "renders": 16665,
+      "commits": [
+        {
+          "phase": "update",
+          "duration": 138.50000000186265
+        },
+        {
+          "phase": "update",
+          "duration": 82.90000000782311
+        },
+        {
+          "phase": "update",
+          "duration": 67.8000000026077
+        },
+        {
+          "phase": "update",
+          "duration": 66.39999999850988
+        },
+        {
+          "phase": "update",
+          "duration": 106.79999999701977
+        }
+      ]
+    },
+    "theme": {
+      "renders": 0,
+      "commits": []
+    }
+  },
+  {
+    "mode": "optimized",
+    "mounted": 6,
+    "search": {
+      "renders": 4,
+      "commits": [
+        {
+          "phase": "update",
+          "duration": 0.5
+        },
+        {
+          "phase": "update",
+          "duration": 0.5
+        },
+        {
+          "phase": "update",
+          "duration": 0.5
+        },
+        {
+          "phase": "update",
+          "duration": 0.40000000037252903
+        },
+        {
+          "phase": "update",
+          "duration": 0.6000000014901161
+        },
+        {
+          "phase": "update",
+          "duration": 2.599999999627471
+        }
+      ]
+    },
+    "theme": {
+      "renders": 0,
+      "commits": []
+    }
+  }
+]

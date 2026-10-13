@@ -14,11 +14,12 @@ export function DeadlineFilter({
   onChange,
 }: DeadlineFilterProps) {
   return (
-    <div className="filters">
+    <div className="filters" role="group" aria-label="Lọc bài tập">
       <button
         className={
           value === 'all' ? 'active' : ''
         }
+        aria-pressed={value === 'all'}
         onClick={() => onChange('all')}
       >
         Tất cả

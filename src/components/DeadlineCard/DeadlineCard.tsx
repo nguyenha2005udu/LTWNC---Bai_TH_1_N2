@@ -1,3 +1,6 @@
+import { recordCardRender } from '../../utils/renderMetrics'
+import { memo } from 'react'
+import { usePinStore } from '../../stores/usePinStore'
 import type { Deadline } from '../../types/deadline'
 import {
   getDeadlineLabel,
@@ -18,11 +21,14 @@ interface DeadlineCardProps {
   onDelete: (id: string) => void
 }
 
-export function DeadlineCard({
+export const AssignmentCard = memo(function AssignmentCard({
   deadline,
   onToggle,
   onDelete,
 }: DeadlineCardProps) {
+  recordCardRender()
+  const pinned = usePinStore(state => state.pinnedIds.includes(deadline.id))
+  const togglePin = usePinStore(state => state.togglePin)
   const days = getDaysDifference(
     deadline.deadline
   )
@@ -32,7 +38,7 @@ export function DeadlineCard({
 
   return (
     <article
-      className={`deadline-card ${
+      className={`deadline-card ${pinned ? 'pinned' : ''} ${
         deadline.completed
           ? 'completed'
           : isOverdue
@@ -52,7 +58,7 @@ export function DeadlineCard({
         </span>
       </div>
 
-      <h3>{deadline.title}</h3>
+      <h3 title={deadline.title}>{deadline.title}</h3>
 
       <div className="deadline-meta">
         <span>
@@ -74,10 +80,11 @@ export function DeadlineCard({
       </div>
 
       <strong className="deadline-days">
-        {getDeadlineLabel(deadline.deadline)}
+        {deadline.completed ? 'Đã hoàn tất bài tập' : getDeadlineLabel(deadline.deadline)}
       </strong>
 
       <div className="actions">
+        <button className="pin-button" aria-pressed={pinned} onClick={() => togglePin(deadline.id)}>{pinned ? 'Bỏ ghim' : 'Ghim'}</button>
         <button
           className="complete-button"
           onClick={() =>
@@ -100,4 +107,5 @@ export function DeadlineCard({
       </div>
     </article>
   )
-}
+})
+export const DeadlineCard = AssignmentCard

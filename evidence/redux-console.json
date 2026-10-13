@@ -1,0 +1,174 @@
+[
+  {
+    "type": "debug",
+    "text": "[vite] connecting..."
+  },
+  {
+    "type": "debug",
+    "text": "[vite] connected."
+  },
+  {
+    "type": "info",
+    "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"
+  },
+  {
+    "type": "startGroup",
+    "text": "%c action %cdeadlines/fetchDeadlines/pending %c@ 13:40:40.699 color: gray; font-weight: lighter; color: inherit; color: gray; font-weight: lighter;"
+  },
+  {
+    "type": "log",
+    "text": "%c prev state color: #9E9E9E; font-weight: bold {deadlines: Object}"
+  },
+  {
+    "type": "log",
+    "text": "%c action     color: #03A9F4; font-weight: bold {type: deadlines/fetchDeadlines/pending, payload: undefined, meta: Object}"
+  },
+  {
+    "type": "log",
+    "text": "%c next state color: #4CAF50; font-weight: bold {deadlines: Object}"
+  },
+  {
+    "type": "endGroup",
+    "text": "console.groupEnd"
+  },
+  {
+    "type": "startGroup",
+    "text": "%c action %cdeadlines/fetchDeadlines/pending %c@ 13:40:40.703 color: gray; font-weight: lighter; color: inherit; color: gray; font-weight: lighter;"
+  },
+  {
+    "type": "log",
+    "text": "%c prev state color: #9E9E9E; font-weight: bold {deadlines: Object}"
+  },
+  {
+    "type": "log",
+    "text": "%c action     color: #03A9F4; font-weight: bold {type: deadlines/fetchDeadlines/pending, payload: undefined, meta: Object}"
+  },
+  {
+    "type": "log",
+    "text": "%c next state color: #4CAF50; font-weight: bold {deadlines: Object}"
+  },
+  {
+    "type": "endGroup",
+    "text": "console.groupEnd"
+  },
+  {
+    "type": "startGroup",
+    "text": "%c action %cdeadlines/fetchDeadlines/fulfilled %c@ 13:40:40.739 color: gray; font-weight: lighter; color: inherit; color: gray; font-weight: lighter;"
+  },
+  {
+    "type": "log",
+    "text": "%c prev state color: #9E9E9E; font-weight: bold {deadlines: Object}"
+  },
+  {
+    "type": "log",
+    "text": "%c action     color: #03A9F4; font-weight: bold {type: deadlines/fetchDeadlines/fulfilled, payload: Array(0), meta: Object}"
+  },
+  {
+    "type": "log",
+    "text": "%c next state color: #4CAF50; font-weight: bold {deadlines: Object}"
+  },
+  {
+    "type": "endGroup",
+    "text": "console.groupEnd"
+  },
+  {
+    "type": "startGroup",
+    "text": "%c action %cdeadlines/fetchDeadlines/fulfilled %c@ 13:40:40.744 color: gray; font-weight: lighter; color: inherit; color: gray; font-weight: lighter;"
+  },
+  {
+    "type": "log",
+    "text": "%c prev state color: #9E9E9E; font-weight: bold {deadlines: Object}"
+  },
+  {
+    "type": "log",
+    "text": "%c action     color: #03A9F4; font-weight: bold {type: deadlines/fetchDeadlines/fulfilled, payload: Array(0), meta: Object}"
+  },
+  {
+    "type": "log",
+    "text": "%c next state color: #4CAF50; font-weight: bold {deadlines: Object}"
+  },
+  {
+    "type": "endGroup",
+    "text": "console.groupEnd"
+  },
+  {
+    "type": "startGroup",
+    "text": "%c action %cdeadlines/addDeadline/pending %c@ 13:40:40.845 color: gray; font-weight: lighter; color: inherit; color: gray; font-weight: lighter;"
+  },
+  {
+    "type": "log",
+    "text": "%c prev state color: #9E9E9E; font-weight: bold {deadlines: Object}"
+  },
+  {
+    "type": "log",
+    "text": "%c action     color: #03A9F4; font-weight: bold {type: deadlines/addDeadline/pending, payload: undefined, meta: Object}"
+  },
+  {
+    "type": "log",
+    "text": "%c next state color: #4CAF50; font-weight: bold {deadlines: Object}"
+  },
+  {
+    "type": "endGroup",
+    "text": "console.groupEnd"
+  },
+  {
+    "type": "startGroup",
+    "text": "%c action %cdeadlines/addDeadline/fulfilled %c@ 13:40:40.854 color: gray; font-weight: lighter; color: inherit; color: gray; font-weight: lighter;"
+  },
+  {
+    "type": "log",
+    "text": "%c prev state color: #9E9E9E; font-weight: bold {deadlines: Object}"
+  },
+  {
+    "type": "log",
+    "text": "%c action     color: #03A9F4; font-weight: bold {type: deadlines/addDeadline/fulfilled, payload: Object, meta: Object}"
+  },
+  {
+    "type": "log",
+    "text": "%c next state color: #4CAF50; font-weight: bold {deadlines: Object}"
+  },
+  {
+    "type": "endGroup",
+    "text": "console.groupEnd"
+  },
+  {
+    "type": "startGroup",
+    "text": "%c action %cdeadlines/toggleDeadline %c@ 13:40:40.924 color: gray; font-weight: lighter; color: inherit; color: gray; font-weight: lighter;"
+  },
+  {
+    "type": "log",
+    "text": "%c prev state color: #9E9E9E; font-weight: bold {deadlines: Object}"
+  },
+  {
+    "type": "log",
+    "text": "%c action     color: #03A9F4; font-weight: bold {type: deadlines/toggleDeadline, payload: 15f37bba-761e-451c-8b89-77d51f43778d}"
+  },
+  {
+    "type": "log",
+    "text": "%c next state color: #4CAF50; font-weight: bold {deadlines: Object}"
+  },
+  {
+    "type": "endGroup",
+    "text": "console.groupEnd"
+  },
+  {
+    "type": "startGroup",
+    "text": "%c action %cdeadlines/deleteDeadline %c@ 13:40:41.192 color: gray; font-weight: lighter; color: inherit; color: gray; font-weight: lighter;"
+  },
+  {
+    "type": "log",
+    "text": "%c prev state color: #9E9E9E; font-weight: bold {deadlines: Object}"
+  },
+  {
+    "type": "log",
+    "text": "%c action     color: #03A9F4; font-weight: bold {type: deadlines/deleteDeadline, payload: 15f37bba-761e-451c-8b89-77d51f43778d}"
+  },
+  {
+    "type": "log",
+    "text": "%c next state color: #4CAF50; font-weight: bold {deadlines: Object}"
+  },
+  {
+    "type": "endGroup",
+    "text": "console.groupEnd"
+  }
+]

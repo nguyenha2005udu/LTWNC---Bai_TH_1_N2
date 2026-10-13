@@ -1,0 +1,35 @@
+[
+  {
+    "mode": "baseline",
+    "mounted": 10000,
+    "search": {
+      "renders": 16665,
+      "commits": [
+        {
+          "phase": "update",
+          "duration": 150.69999999552965
+        },
+        {
+          "phase": "update",
+          "duration": 74.29999999888241
+        },
+        {
+          "phase": "update",
+          "duration": 63.500000005587935
+        },
+        {
+          "phase": "update",
+          "duration": 69.30000000819564
+        },
+        {
+          "phase": "update",
+          "duration": 109.90000000223517
+        }
+      ]
+    },
+    "theme": {
+      "renders": 0,
+      "commits": []
+    }
+  }
+]
